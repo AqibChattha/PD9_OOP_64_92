@@ -11,9 +11,9 @@ import java.util.Scanner;
  *
  * @author humza
  */
+
 public class Task1 {
 
-    
     static int wordCounter(String s) {
         int count = 0;
         for (int i = 0; i < s.length() - 1; i++) {
@@ -75,12 +75,12 @@ public class Task1 {
         }
         return modifiedString;
     }
-    
-    static String removeInteger(String s){
+
+    static String removeInteger(String s) {
         String modifiedString = "";
         for (int i = 0; i < s.length(); i++) {
-            if (s.charAt(i)<47 || s.charAt(i)>57) {
-               modifiedString += s.charAt(i);
+            if (s.charAt(i) < 47 || s.charAt(i) > 57) {
+                modifiedString += s.charAt(i);
             }
         }
         return modifiedString;
@@ -99,7 +99,7 @@ public class Task1 {
         System.out.print("Your sentence printed vertically is: \n" + displayVertical(input_String));
         System.out.println("\n" + ridMultipleBlank(input_String));
         System.out.println("\n" + removeInteger(input_String));
-        
+
     }
-    
+
 }
