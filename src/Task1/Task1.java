@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package pd9_oop_64_92;
+package Task1;
 
 import java.util.Scanner;
 
@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author humza
  */
-public class PD9_OOP_64_92 {
+public class Task1 {
 
     
     static int wordCounter(String s) {
