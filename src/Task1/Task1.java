@@ -99,6 +99,7 @@ public class Task1 {
         System.out.print("Your sentence printed vertically is: \n" + displayVertical(input_String));
         System.out.println("\n" + ridMultipleBlank(input_String));
         System.out.println("\n" + removeInteger(input_String));
+        
     }
     
 }
