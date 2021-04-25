@@ -105,5 +105,18 @@ public class Task4 {
         }
         return inctances;
     }
-
+    
+    public boolean isIntegerCodeOfLength(String inputString, int length){
+        if (inputString.length()==length) {
+            for (int i = 0; i < length; i++) {
+                if (inputString.charAt(i)<'0' || inputString.charAt(i)>'9') {
+                }else{
+                    return false;
+                }
+            }
+        }else{
+            return false;
+        }
+        return true;
+    }
 }

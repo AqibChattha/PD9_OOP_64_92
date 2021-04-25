@@ -241,10 +241,12 @@ static int puncCount(String c) {
                     System.out.println("2- Conver the String to Upper case Letters ");
                     System.out.println("3- Conver the String to Lower case Letters  ");
                     System.out.println("4- Compare the String to check thier equality ");
-                    System.out.println("5- Check wether the String ends with a specified character ");                    
+                    System.out.println("5- Check wether the String ends with a specified character ");   
+                    System.out.println("6- Find the number of intances a string is present in input String ");    
+                    System.out.println("7- Check wether the String is an integer code of input length ");                    
                     System.out.println("0- Go Back ");
                     option = scanner.nextLine();
-                    if (option.equals("1") || option.equals("2") || option.equals("3") || option.equals("4") || option.equals("5") || option.equals("6")) {
+                    if (option.equals("1") || option.equals("2") || option.equals("3") || option.equals("4") || option.equals("5") || option.equals("6") || option.equals("7")) {
                         System.out.println("Input String:");
                         input_String = scanner.nextLine();
                     }
@@ -278,7 +280,15 @@ static int puncCount(String c) {
                             System.out.println("Enter the String you want to find the number of:");
                             String findString = scanner.nextLine();
                             System.out.println("Number of inctances: "+t4.numberOfInstances(input_String, findString));
-                            
+                            break;
+                        case "7":
+                            System.out.println("Enter the length of the code: ");
+                            int length = scanner.nextInt();
+                            if (t4.isIntegerCodeOfLength(input_String, length)) {
+                                System.out.println("It is a valid Code.");
+                            }else{
+                                System.out.println("It is not a valid Code.");
+                            }
                             break;
                         case "0":
                             
