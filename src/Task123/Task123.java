@@ -16,10 +16,10 @@ public class Task123 {
     /**
      * @param args the command line arguments
      */
-    int a=0;
+    int a=4;
     public static void main(String[] args) {
         // TODO code application logic here
-        int a = 96;
+        int a = 55;
         Task1 t1 = new Task1();
         Task2 t2 = new Task2();
         Task3 t3 = new Task3();
