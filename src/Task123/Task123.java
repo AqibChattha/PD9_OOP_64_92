@@ -19,6 +19,7 @@ public class Task123 {
     int a=9;
     public static void main(String[] args) {
         // TODO code application logic here
+        int a = 96;
         Task1 t1 = new Task1();
         Task2 t2 = new Task2();
         Task3 t3 = new Task3();
