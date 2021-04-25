@@ -244,7 +244,7 @@ static int puncCount(String c) {
                     System.out.println("5- Check wether the String ends with a specified character ");                    
                     System.out.println("0- Go Back ");
                     option = scanner.nextLine();
-                    if (option.equals("1") || option.equals("2") || option.equals("3") || option.equals("4") || option.equals("5")) {
+                    if (option.equals("1") || option.equals("2") || option.equals("3") || option.equals("4") || option.equals("5") || option.equals("6")) {
                         System.out.println("Input String:");
                         input_String = scanner.nextLine();
                     }
@@ -273,6 +273,12 @@ static int puncCount(String c) {
                             }else{
                                 System.out.println("The String does not end with a specified character.");
                             }
+                            break;
+                        case "6":
+                            System.out.println("Enter the String you want to find the number of:");
+                            String findString = scanner.nextLine();
+                            System.out.println("Number of inctances: "+t4.numberOfInstances(input_String, findString));
+                            
                             break;
                         case "0":
                             
