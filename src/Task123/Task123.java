@@ -159,26 +159,35 @@ static int puncCount(String c) {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-
+ Task1 t1 = new Task1();
+        Task2 t2 = new Task2();
+        Task3 t3 = new Task3();
+        Task4 t4 = new Task4();
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter String Of Task1 : \n");
         String scan = scanner.nextLine();
         String scan1, scan2, scan3, scan4 = "";
         System.out.print("Enter subString Of Task1 : \n");
         scan1 = scanner.next();
-        Task1 t1 = new Task1();
-        Task2 t2 = new Task2();
-        Task3 t3 = new Task3();
-        Task4 t4 = new Task4();
+       scanner.nextLine();
         System.out.println("Total numbers of words : " + t1.wordCounter(scan));
         System.out.println("Total numbers of Vowels : " + t1.vowelCounter(scan));
         System.out.println("Total numbers of Punctuation : " + t1.puncCount(scan));
         System.out.println(scan1 + "'' is the part of String ?  = " + t1.isSubstring(scan, scan1));
-        System.out.println("Vertical String is  : \n" + t2.displayVertical(scan));
-        System.out.println("Removed multiples blanks  : " + t3.ridMultipleBlank(scan));
-        System.out.println("Removed integers  : " + t3.removeInteger(scan));
         
+        System.out.flush();
+         System.out.print("Enter String Of Task2 : \n");
+        scan2=scanner.nextLine();
         
+        System.out.println("Vertical String is  : \n" + t2.displayVertical(scan2));
+        System.out.flush();
+         System.out.print("Enter String Of Task3 : \n");
+        scan3=scanner.nextLine();
+        
+        System.out.println("Removed multiples blanks  : " + t3.ridMultipleBlank(scan3));
+        System.out.println("Removed integers  : " + t3.removeInteger(scan3));
+        
+        System.out.flush();
      
         /*
         int option;
