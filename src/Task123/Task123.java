@@ -16,7 +16,7 @@ public class Task123 {
     /**
      * @param args the command line arguments
      */
-    int a=0;
+    int a=9;
     public static void main(String[] args) {
         // TODO code application logic here
         Task1 t1 = new Task1();
