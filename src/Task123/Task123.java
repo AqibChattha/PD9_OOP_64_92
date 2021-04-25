@@ -163,7 +163,7 @@ static int puncCount(String c) {
         Task2 t2 = new Task2();
         Task3 t3 = new Task3();
         Task4 t4 = new Task4();
-
+        
         Scanner scanner = new Scanner(System.in);
         String option;
         String input_String;
@@ -217,6 +217,13 @@ static int puncCount(String c) {
                             System.out.println("\n"+t3.removeInteger(input_String));
                             break;
                         case "3":
+                            String encryptedString = t3.stringEncryption(input_String);
+                            System.out.println("\n"+encryptedString);
+                            System.out.println("Enter D to decrypt this message else Go back.");
+                            String decrypt = scanner.nextLine();
+                            if (decrypt.equals("d")||decrypt.equals("D")) {
+                                System.out.println("\n"+t3.stringDecryption(encryptedString));
+                            }
                             break;
                         case "0":
                             
@@ -280,6 +287,7 @@ static int puncCount(String c) {
 
                 case "0":
                     System.out.println("Thank You for using the System.");
+                    System.out.println(option);
                     break;
                 default:
                     System.out.println("Invalid Input.");
@@ -287,7 +295,7 @@ static int puncCount(String c) {
 
             }
 
-        } while (option != "0");
+        } while (!option.equals("0"));
 
         /*
         Scanner scanner = new Scanner(System.in);
